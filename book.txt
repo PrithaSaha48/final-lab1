@@ -1,0 +1,55 @@
+public class Book {
+	public void printName(){
+		System.out.println("This is a normal book");
+	}
+	public void issueBook(int n) {
+		System.out.println("This is issue normal book"+n);
+	}
+	public void returnBook(int n) {
+		System.out.println("This is return normal book"+n);
+	}
+
+}
+--------------
+
+
+class CourseBook extends Book{
+		public void printName() {
+			System.out.println("This is your course book");
+		}
+		
+		public void issueBook(int n) {
+			System.out.println("issue book id:"+n);
+		}
+		public void issueBook() {
+			System.out.println("issue book without id:");
+		}
+		//OVERLOADING
+		public void returnBook(int n,int m) {
+			System.out.println("return book id1:"+n+"return book id2:"+m);
+		}
+		}
+
+
+
+
+
+
+-----------
+public class BookTest {
+	public static void main(String[]args) {
+		
+		CourseBook cb =new CourseBook();
+		cb.issueBook(12);
+		cb.printName();
+		System.out.println("..........");
+		Book b= new Book();
+		b.printName();
+		b.issueBook(10);
+		System.out.println(".....");
+		Book b1=new CourseBook();
+		b1.printName();
+	}
+
+}
+

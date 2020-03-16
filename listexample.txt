@@ -1,0 +1,81 @@
+import java.util.ArrayList;
+
+public class List {
+	public static void main (String[]args) {
+		ArrayList<String>wordList=new ArrayList<>();
+		wordList.add("name1");
+		wordList.add("name2");
+		wordList.add("name3");
+		wordList.add("name4");
+		System.out.println(wordList.size());
+		for(int i=0;i<wordList.size();i++) {
+			System.out.println(wordList.get(i));
+		}
+		for(String word:wordList) {
+			System.out.println(word);
+		}
+	}
+
+}
+
+
+-------------
+
+
+import java.util.ArrayList;
+
+class Student {
+	private int id;
+	private String name;
+	
+	
+	public Student(int id,String name) {
+		super();
+		this.id=id;
+		this.name=name;
+		
+	}
+
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + "]";
+	}
+	
+
+}
+
+	
+	
+
+--------
+import java.util.ArrayList;
+
+public class ListExample{
+		public static void main(String[]args) {
+			ArrayList<Student>students= new ArrayList<>();
+
+			Student s1= new Student(1234,"jui");
+			Student s2= new Student(1234,"pritha");
+			Student s3= new Student(1234,"Saha");
+			students.add(s1);
+			students.add(s2);
+			students.add(s3);
+			
+			System.out.println(students.size());
+			for(int i=0;i<students.size();i++) {
+				System.out.println(students.get(i));
+				
+			}
+			
+			
+		}
+		
+
+	}
+
+
+
+
+
+
